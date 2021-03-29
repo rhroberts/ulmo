@@ -2,7 +2,7 @@ from datetime import timedelta
 import pandas as pd
 import numpy as np
 
-battery_names = ['bl', 'vb', 'bv']
+battery_names = ['bl', 'vb', 'bv', 'yb']
 
 
 def twdb_dot(df_row, dual_well=False, drop_dcp_metadata=True):
