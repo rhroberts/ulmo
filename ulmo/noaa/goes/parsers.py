@@ -283,7 +283,8 @@ def _parse_value(water_level_str):
 
 def _invalid_message_check(message):
     is_invalid = False
-    invalid_messages = ['dadds', 'operator', 'no']
+    # space in "no " is intentional, to avoid matching "dynotek" field
+    invalid_messages = ['dadds', 'operator', 'no ']
     for invalid in invalid_messages:
         if invalid in message:
             is_invalid = True
